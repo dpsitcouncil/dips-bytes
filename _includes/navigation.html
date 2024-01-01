@@ -5,8 +5,13 @@
 
      <div id="link-drawer" class="links">
           <div class="links-container">
-               <a href="http://google.com" target="_blank" rel="noopener noreferrer">google</a>
+               {% for item in site.data.navigation.items %}
+                    <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+                         {{ item.name }}
+                    </a>
+               {% endfor %}
           </div>
+          
       </div>
      
      <button id="link-drawer-handle" class="link-drawer-handle"><img src="/_media/chevron-right.svg"></button>

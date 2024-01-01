@@ -1,0 +1,6 @@
+# _data/navigation.yml
+items:
+  - name: About
+    link: /about
+  - name: Staff
+    link: /staff
