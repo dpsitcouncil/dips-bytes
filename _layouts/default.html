@@ -5,11 +5,14 @@
 
   <body>
 
+    {% include navigation.html %}
+
     <main>
       {{ content }}
     </main>
 
-    {% include envsash.html %}
+		{% include footer.html %}
+		{% include envsash.html %}
 
   </body>
 </html>
