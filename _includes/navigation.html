@@ -1,0 +1,32 @@
+<nav id="nav">
+     
+     <div class="header-title">{{ site.title }}</div>
+
+
+     <div id="link-drawer" class="links">
+          <div class="links-container">
+               <a href="http://google.com" target="_blank" rel="noopener noreferrer">google</a>
+          </div>
+      </div>
+     
+     <button id="link-drawer-handle" class="link-drawer-handle"><img src="/_media/chevron-right.svg"></button>
+
+     <script>
+          var b = document.getElementById("link-drawer-handle");
+          var linkDrawerIsOpen = false;
+
+          b.addEventListener("click", () => {
+               if (linkDrawerIsOpen) {
+                    document.getElementById("link-drawer").classList.remove("visible");
+                    document.getElementById("nav").classList.remove("link-drawer-open");
+                    b.classList.remove('rotated');
+                    linkDrawerIsOpen = false;
+               } else {
+                    document.getElementById("link-drawer").classList.add("visible");
+                    document.getElementById("nav").classList.add("link-drawer-open");
+                    b.classList.add('rotated');
+                    linkDrawerIsOpen = true;
+               }
+          });
+     </script>
+</nav>

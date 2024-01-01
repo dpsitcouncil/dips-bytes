@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	{% include head.html %}
+
+	<body class="home-body">
+		{% include navigation.html %}
+		
+		<main>
+
+			<div class="home-content">
+				{{content}}
+			</div>
+
+		</main>
+
+		{% include envsash.html %}
+	</body>
+
+	<script>
+		function hover(element) {
+			element.setAttribute('src', '/images/me2.png');
+		}
+
+		function unhover(element) {
+			element.setAttribute('src', '/images/me.png');
+		}
+	</script>
+</html>
