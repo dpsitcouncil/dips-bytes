@@ -1,0 +1,92 @@
+@import 'colors'
+
+.post-container 
+     padding-top: 6em
+     padding-bottom: 1em
+     padding-right: 6em
+     padding-left: 6em
+     max-width: 1200px
+     margin: 0 auto
+     display: flex
+     align-items: flex-start
+     flex-direction: row
+     gap: 50px
+
+.post-date 
+     color: rgba(0, 0, 0, 0.4)
+     letter-spacing: -.05em
+     font-family: 'EB Garamond', Cochin, Georgia, Times, 'Times New Roman', serif
+     //&::before
+     //     color: #fff
+     //     content: "new"
+     //     background: linear-gradient(to top, rgba(82, 77, 115, 0.2) 0.1%, rgba(84, 79, 115, 0.5) 100%) rgba(211, 210, 218, 0.49)
+     //     font-weight: 900
+     //     border-radius: 100vh
+     //     padding: 2px 7px 3px
+     //     font-size: 11px
+     //     position: relative
+     //     top: -2px
+     //     margin: 0 7px 0 1px
+     a
+          text-decoration: none
+          color: rgba(0, 0, 0, 0.6)
+          font-weight: 800
+          &:hover
+               text-decoration: underline
+          &::before
+               content: "by "
+               text-decoration: none
+               font-weight: normal
+
+.categories
+     font-size: 14px
+     margin-top: 16px
+     span
+          text-decoration: none
+          width: fit-content
+          font-family: 'Inter Tight'
+          color: inherit
+          border-radius: 4px
+          padding-right: 4px
+          padding-left: 4px
+          text-transform: uppercase
+          font-weight: bold
+          margin-right: 8px
+          color: #fff
+          background-color: rgba(0, 0, 0, 0.4)
+          // text-decoration: none
+          // width: fit-content
+          // font-family: 'Inter Tight'
+          // padding-right: 4px
+          // padding-left: 4px
+          // text-transform: uppercase
+          // font-weight: bold
+          // margin-right: 8px
+          // color: rgb(232, 170, 87);
+          // background-image: linear-gradient(rgba(31, 12, 12, 1), rgba(85, 35, 35, 1));
+          // border: 5px solid;
+          // border-image: linear-gradient(rgb(255, 203, 132), rgb(220, 170, 104) 49.58%, rgb(188, 145, 86) 51.26%, rgb(145, 105, 51)) 1 100%;
+          // box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.67) inset, 0 8px 1px 0 rgba(255, 255, 255, 0.35) inset, 0 1px 2px rgba(0, 0, 0, 0.67);
+
+.post-title 
+     margin-top: 1em
+     margin-bottom: 1em
+     font-family: 'EB Garamond', Cochin, Georgia, Times, 'Times New Roman', serif
+     font-weight: 300
+     font-size: 50pt
+     letter-spacing: -.05em
+     line-height: 1em
+
+.post 
+     font-family: 'EB Garamond', Cochin, Georgia, Times, 'Times New Roman', serif
+
+@media only screen and (max-width: 1200px) 
+     .post-container
+          flex-wrap: wrap-reverse
+
+@media only screen and (max-width: 535px) 
+     .post-container
+          padding-top: 6em
+          padding-bottom: 1em
+          padding-right: 1em
+          padding-left: 1em

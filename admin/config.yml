@@ -1,3 +1,5 @@
+local_backend: true
+
 backend:
   name: git-gateway
 
@@ -43,3 +45,10 @@ collections:
             fields:
               - { label: Name, name: name, widget: string }
               - { label: Link, name: link, widget: string }
+      - label: 'Sash'
+        name: 'sash'
+        file: '_data/sash.yml'
+        fields:
+          - label: 'Sash Content'
+            name: 'content'
+            widget: 'string'
