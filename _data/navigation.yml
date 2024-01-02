@@ -1,6 +1,7 @@
-# _data/navigation.yml
 items:
   - name: About
     link: /about
   - name: Staff
     link: /staff
+  - name: Get the Journal
+    link: /issues

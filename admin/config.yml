@@ -18,6 +18,7 @@ collections:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Categories', name: 'categories', widget: 'string' }
       - { label: 'Author', name: 'author', widget: "relation", collection: "authors", search_fields: ["name"], value_field: "name", display_fields: ["name", "display_name"] }
       - { label: 'Extract', name: 'extract', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
@@ -68,3 +69,20 @@ collections:
             search_fields: ["title"]
             value_field: "title"
             display_fields: ["title"]
+  - name: 'issues'
+    label: 'Journal Issues'
+    editor:
+      preview: false
+    files:
+      - label: 'Issues'
+        name: 'issues'
+        file: '_data/issues.yml'
+        fields:
+          - label: 'Items'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: 'Extract', name: 'extract', widget: 'string' }
+              - { label: File, name: file, widget: file }
+              - { label: 'Publish Date', name: 'date', widget: 'datetime' }

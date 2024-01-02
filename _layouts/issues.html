@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{{content}}
+
+
+{% if site.data.issues.items %}
+     {% assign items = site.data.issues.items | sort: 'date' | reverse %}
+     <ul class="issues-container">
+          {% for item in items %}
+               <li><a href="{{item.file}}">
+
+                    <div class="title">{{item.name}}</div>
+                    {{item.extract}}
+               </a></li>
+          {% endfor %}
+     </ul>
+{% else %}   
+     <h2>No issues have been published.</h2>
+{% endif %}
