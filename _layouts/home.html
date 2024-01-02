@@ -43,7 +43,7 @@
 							0 -%}
 								<div class="post-list">
 									{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
-									-%} {% assign count = 0 %}  {%- for post in posts -%}
+									-%} {%- for post in posts limit:3 -%}
 										<div class="item">
 											<a class="post-link" href="{{ post.url | relative_url }}">
 												<!-- <div class="post-meta">{{ post.date | date: date_format }}</div> -->
@@ -59,7 +59,6 @@
 												</div>
 											</a>
 										</div>
-										{% if count == 3 %} {% break %} {% endif %}
 									{%- endfor -%}
 								</div>
 						</div>

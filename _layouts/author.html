@@ -8,11 +8,29 @@ layout: default
 {{ content }}
 
 <h2>Posts</h2>
-<ul>
-  {% assign filtered_posts = site.posts | where: 'author', page.name %} {% for post in
-  filtered_posts %}
-  <li>
-    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-  </li>
-  {% endfor %}
-</ul>
+
+<section>
+  <div class="articles">
+    {% assign posts = site.posts | where: 'author', page.name  %}
+      <div class="post-list">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
+        -%} {%- for post in posts -%}
+          <div class="item">
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              <!-- <div class="post-meta">{{ post.date | date: date_format }}</div> -->
+              <div class="post-image">
+                {% if post.image %} <img src="{{post.image}}">
+                {% endif %}
+              </div>
+              <div class="post-title-section">
+                {% assign author = site.authors | where: 'name', post.author |
+                first %} {% if author %}<div class="post-author">{{ author.display_name }}</div>
+                {% endif %}
+                <div class="post-title">{{ post.title | escape }}</div>
+              </div>
+            </a>
+          </div>
+        {%- endfor -%}
+      </div>
+  </div>
+</section>
