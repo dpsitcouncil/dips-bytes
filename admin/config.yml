@@ -13,9 +13,13 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
+    publish_mode: editorial_workflow
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: "relation", collection: "authors", search_fields: ["name"], value_field: "name", display_fields: ["name", "display_name"] }
+      - { label: 'Extract', name: 'extract', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'authors'
@@ -52,3 +56,14 @@ collections:
           - label: 'Sash Content'
             name: 'content'
             widget: 'string'
+      - label: 'Featured Post'
+        name: 'fp'
+        file: '_data/featured.yml'
+        fields:
+          - label: 'Post'
+            name: 'post'
+            widget: "relation"
+            collection: "blog"
+            search_fields: ["title"]
+            value_field: "title"
+            display_fields: ["title"]

@@ -14,91 +14,65 @@
 						<div class="title">Featured</div>
 					</header>
 
-					<a href="google.com">
-
+					{% assign fp = site['posts'] | where: 'title', site.data.featured.post | last  %}
+					<a href="{{ fp.url | relative_url }}">
 						<div class="image">
-							<img src="https://cdn.mos.cms.futurecdn.net/QeSUC7YPVRXq7Kz8MxHDq9-1920-80.jpg.webp" alt="">
+							<img src="{{fp.image}}" alt="">
 						</div>
 	
 						<div class="periphery">
-							<div class="post-title">You've been eating biscuits wrong your whole life!</div>
-							<div class="extract">Teen shows you how.</div>
+							{% assign author = site.authors | where: 'name', fp.author |
+							first %} {% if author %}<div class="post-author">{{ author.display_name }}</div>
+							{% endif %}
+							<div class="post-title">{{fp.title}}</div>
+							<div class="extract">{{fp.extract}}</div>
 						</div>
 
 					</a>
 
 				</section>
 
-				<section>
-					<header>
-						<div class="title">Section</div>
+				{% for collection in site.collections %} {% if collection.label != 'authors' %}
+					<section>
+						<header>
+							<div class="title">{{collection.label | capitalize}}</div>
+						</header>
+
 						<div class="articles">
-							
+							{% assign posts = site[collection.label] | sort: 'date' | reverse  %} {% endif %} {%- if posts.size >
+							0 -%}
+								<div class="post-list">
+									{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
+									-%} {% assign count = 0 %}  {%- for post in posts -%}
+										<div class="item">
+											<a class="post-link" href="{{ post.url | relative_url }}">
+												<!-- <div class="post-meta">{{ post.date | date: date_format }}</div> -->
+												<div class="post-image">
+													{% if post.image %} <img src="{{post.image}}">
+													{% endif %}
+												</div>
+												<div class="post-title-section">
+													{% assign author = site.authors | where: 'name', post.author |
+													first %} {% if author %}<div class="post-author">{{ author.display_name }}</div>
+													{% endif %}
+													<div class="post-title">{{ post.title | escape }}</div>
+												</div>
+											</a>
+										</div>
+										{% if count == 3 %} {% break %} {% endif %}
+									{%- endfor -%}
+								</div>
 						</div>
 
-					</header>
-					<div class="separator-dotted"></div>
-				</section>
-
-
-				<div class="shelf">
-					dododo
-				</div>
+						<div class="separator-dotted"></div>
+					</section>
+					{%- endif -%} {% endfor %}
 
 			</div>
 
 		</main>
 
-		{% if site.paginate %} {% assign posts = paginator['posts'] %}
-{% else %} {% assign posts = site['posts'] | sort: 'date' | reverse  %} {% endif %} {%- if posts.size >
-0 -%} {%- if page.list_title -%}
-<h2 class="post-list-heading">{{ page.list_title }}</h2>
-{%- endif -%}
-<div class="post-list">
-	{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
-	-%} {%- for post in posts -%}
-		<div class="item">
-			<a class="post-link" href="{{ post.url | relative_url }}">
-				<!-- <div class="post-meta">{{ post.date | date: date_format }}</div> -->
-				<div class="post-title">{{ post.title | escape }}</div>
-				{%- if site.show_excerpts -%} <div class="post-excerpt">{{ post.excerpt }}</div> {%- endif -%}
-			</a>
-		</div>
-	{%- endfor -%}
-</div>
-
-{% if site.paginate %}
-<div class="pager">
-	<ul class="pagination">
-		{%- if paginator.previous_page %}
-		<li>
-			<a
-				href="{{ paginator.previous_page_path | relative_url }}"
-				class="previous-page"
-				>{{ paginator.previous_page }}</a
-			>
-		</li>
-		{%- else %}
-		<li><div class="pager-edge">•</div></li>
-		{%- endif %}
-		<li><div class="current-page">{{ paginator.page }}</div></li>
-		{%- if paginator.next_page %}
-		<li>
-			<a
-				href="{{ paginator.next_page_path | relative_url }}"
-				class="next-page"
-				>{{ paginator.next_page }}</a
-			>
-		</li>
-		{%- else %}
-		<li><div class="pager-edge">•</div></li>
-		{%- endif %}
-	</ul>
-</div>
-{%- endif %} {%- endif -%}
-
 		{% include footer.html %}
-
 		{% include envsash.html %}
 	</body>
 
