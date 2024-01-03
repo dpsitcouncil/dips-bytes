@@ -9,6 +9,8 @@
 
 			<div class="home-content">
 				
+				{{content}}
+
 				<section class="title-section">
 					<header>
 						<div class="title">Featured</div>
@@ -43,7 +45,7 @@
 							0 -%}
 								<div class="post-list">
 									{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
-									-%} {%- for post in posts limit:3 -%}
+									-%} {%- for post in posts limit:site.data.index.nposts -%}
 										<div class="item">
 											<a class="post-link" href="{{ post.url | relative_url }}">
 												<!-- <div class="post-meta">{{ post.date | date: date_format }}</div> -->

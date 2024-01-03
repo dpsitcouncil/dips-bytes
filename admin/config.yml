@@ -73,6 +73,13 @@ collections:
           - label: 'Sash Content'
             name: 'content'
             widget: 'string'
+      - label: 'Number of posts on Index'
+        name: 'nposts'
+        file: '_data/index.yml'
+        fields:
+          - label: 'Number'
+            name: 'nposts'
+            widget: 'number'
       - label: 'Featured Post'
         name: 'fp'
         file: '_data/featured.yml'
