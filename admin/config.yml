@@ -51,6 +51,21 @@ collections:
             fields:
               - { label: Name, name: name, widget: string }
               - { label: Link, name: link, widget: string }
+      - label: 'Footer'
+        name: 'footer'
+        file: '_data/footer.yml'
+        fields:
+          - label: 'Footer Items'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: Name, name: name, widget: string }
+              - label: 'Links'
+                name: 'links'
+                widget: 'list'
+                fields:
+                  - { label: Name, name: name, widget: string }
+                  - { label: Link, name: link, widget: string }
       - label: 'Sash'
         name: 'sash'
         file: '_data/sash.yml'
