@@ -5,3 +5,5 @@ items:
     link: /staff
   - name: Get the Journal
     link: /issues
+  - name: Archive
+    link: /archive

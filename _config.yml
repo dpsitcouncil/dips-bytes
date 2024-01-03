@@ -32,6 +32,7 @@ github_username:  jekyll
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-archives
 
 sass:
   sass_dir: _sass
@@ -67,3 +68,17 @@ show_excerpts: true
 
 include:
   - _media
+
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - categories
+  layouts:
+    year: year-archive
+    month: month-archive
+    category: category-archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    category: '/category/:name/'
