@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Staff
+title: Archive
 permalink: /archive/
 ---
 

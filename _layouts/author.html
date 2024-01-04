@@ -5,6 +5,11 @@ layout: default
 <h1>{{ page.display_name }}</h1>
 <h2>{{ page.position }}</h2>
 
+<div class="author-image">
+  {% if author.image %} <img src="{{author.image}}">
+  {% endif %}
+</div>
+
 {{ content }}
 
 <h2>Posts</h2>
