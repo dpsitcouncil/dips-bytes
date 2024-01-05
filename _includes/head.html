@@ -32,6 +32,15 @@
 	<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	<script>
 		window.onload = function() {twemoji.parse(document.body, {folder: 'svg', ext: '.svg'});}
+		
+		document.addEventListener("DOMContentLoaded", function () {
+			var body = document.body;
+			var bodyHTML = body.innerHTML;
+			var replacedHTML = bodyHTML.replace(/orn_([^\s<]+)/g, function (match, p1) {
+				return '<span class="ornaments">' + p1 + '</span>';
+			});
+			body.innerHTML = replacedHTML;
+		});
 	</script>
 	<style>
 		img.emoji {
