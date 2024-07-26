@@ -1,9 +1,12 @@
 items:
-  - name: Events
+  - name: TECH
     link: /events
-
-  - name: Principal's Message
-    link: /principals-message
     
-  - name: Contact
-    link: /contact
+  - name: AI
+    link: /events
+    
+  - name: WEEKLY
+    link: /events
+  
+  - name: ARCHIVE
+    link: /events
