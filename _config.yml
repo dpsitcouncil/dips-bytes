@@ -34,7 +34,14 @@ plugins:
   - jekyll-feed
   - jekyll-archives
   
-
+permalink: /:collection/:title.html
+collections:
+  posts:
+    output: true
+  authors:
+    output: true
+    permalink: /:collection/:name
+show_excerpts: true
 
 include:
   - _media

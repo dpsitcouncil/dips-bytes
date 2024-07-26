@@ -13,12 +13,30 @@
 					{{ page.title }}
 				</div>
 				<div class="date">
-					{{ page.date }}
+					{{ page.author }} // {{ page.date | date: "%-d %B %Y" }} // 
+					{% for category in page.categories %}
+					  <span class="tag">{{category}}</span>
+					{% endfor %}
 				</div>
 			</div>
 			
 			<div class="content">
 				{{ content }}
+			</div>
+			
+			<div class="author">
+				<div class="byline">
+					written by
+				</div>
+				{% assign author = site.authors | where: 'shortname', page.author | first %}
+				{% if author %}
+					<div class="author-name">
+						<a href="{{ author.url }}">{{ author.name }}</a>
+					</div>
+					<em>{{ author.description }}</em>
+				{% else %}
+					The IT Council, DPS Bangalore South
+				{% endif %}
 			</div>
 		</main>
 

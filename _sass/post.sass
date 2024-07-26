@@ -14,6 +14,13 @@
 		.date
 			font-size: 18px
 			color: $theme_light
+			.tag
+				font-size: 14px
+				line-height: 16px
+				background-color: $theme_light
+				color: white
+				padding: 0px 10px
+				border-radius: 5px
 			
 	.content
 		font-family: "Source Serif 4"
@@ -24,3 +31,19 @@
 			margin-top: 32px
 			font-family: "IBM Plex Sans"
 			font-size: 18px
+			
+	.author
+		margin-top: 32px
+		font-family: "IBM Plex Sans"
+		font-size: 14px
+		.byline
+			color: $theme_light
+		.author-name
+			font-size: 18px
+			font-weight: bold
+			a
+				text-decoration: none
+				color: #000
+				&:active, &:hover
+					text-decoration: underline
+		
