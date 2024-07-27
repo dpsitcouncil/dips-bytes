@@ -3,7 +3,7 @@ local_backend: true
 backend:
   name: git-gateway
   repo: dpsitcouncil/dips-bytes
-  branch: master
+  branch: content
   
 media_folder: '_media/uploads'
 collections:
