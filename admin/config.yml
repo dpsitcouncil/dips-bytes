@@ -2,6 +2,9 @@ local_backend: true
 
 backend:
   name: git-gateway
+  repo: dpsitcouncil/dips-bytes
+  branch: master
+  
 media_folder: '_media/uploads'
 collections:
   - name: 'blog'
