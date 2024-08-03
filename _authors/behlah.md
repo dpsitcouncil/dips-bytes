@@ -1,6 +1,6 @@
 ---
 layout: author
-name: "Behlah Adnan Zaveri "
+name: "Behlah Zaveri "
 shortname: Behlah
 position: WRITER
 image: /_media/uploads/img_7417.jpeg
