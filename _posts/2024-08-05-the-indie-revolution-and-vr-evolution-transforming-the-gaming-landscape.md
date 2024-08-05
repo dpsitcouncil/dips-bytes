@@ -2,7 +2,7 @@
 layout: post
 image: /_media/uploads/blog_image_2_exp.jpg
 title: "The Indie Revolution and VR Evolution: Transforming The Gaming Landscape"
-categories: Esports and Gaming
+categories: e-sports gaming
 author: Behlah
 date: 2024-08-05T13:40:00.000Z
 ---
