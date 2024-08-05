@@ -1,7 +1,7 @@
 ---
 layout: author
 name: Likithaa Danda Praveen
-shortname: Likithaa
+shortname: likithaa
 position: Writer
 image: /_media/uploads/whatsapp-image-2024-08-05-at-7.17.43-pm.jpeg
 description: Student and Writer
