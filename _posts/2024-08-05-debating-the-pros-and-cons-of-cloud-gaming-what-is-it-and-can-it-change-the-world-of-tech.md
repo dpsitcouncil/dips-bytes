@@ -7,7 +7,7 @@ categories: tech, gaming, video games
 author: Likithaa
 date: 2024-08-05T19:25:00.000Z
 ---
-Over the past couple of years, the gaming industry has grown significantly. The last few years might have had significant effects. However, the technological advancements in video game files certainly affect the industry. One such advancement is the implementation of cloud gaming services.
+Over the past couple of years, the gaming industry has grown significantly. The last few years might have had significant effects. However, the technological advancements in video games certainly affect the industry. One such advancement is the implementation of cloud gaming services.
 
 **WHAT IS CLOUD GAMING?**
 
