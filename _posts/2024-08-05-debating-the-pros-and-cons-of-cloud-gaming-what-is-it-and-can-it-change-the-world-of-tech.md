@@ -3,9 +3,9 @@ layout: post
 image: /_media/uploads/screenshot-2024-08-05-193440.png
 title: "Debating the Pros and Cons of Cloud Gaming: what is it, and can it
   change the world of tech?"
-categories: tech, gaming, video games
-author: Likithaa
-date: 2024-08-05T19:25:00.000Z
+categories: tech gaming video-games
+author: likithaa
+date: 2024-08-06T07:35:00.000Z
 ---
 Over the past couple of years, the gaming industry has grown significantly. The last few years might have had significant effects. However, the technological advancements in video games certainly affect the industry. One such advancement is the implementation of cloud gaming services.
 
