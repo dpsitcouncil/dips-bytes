@@ -1,8 +1,8 @@
 ---
 layout: post
 image: /_media/uploads/arcane.png
-title: '"The Arcane" , An event which took place at DPS Bangalore South '
-categories: "Gaming Event "
+title: ARCANE @ DPS Bangalore South
+categories: event school gaming
 author: dheeraj
 date: 2024-08-09T07:43:00.000Z
 ---
