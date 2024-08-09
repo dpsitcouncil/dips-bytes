@@ -1,6 +1,6 @@
 ---
 layout: post
-image: https://hype.my/wp-content/uploads/2023/08/nvidia.png
+image: /_media/uploads/arcane.png
 title: '"The Arcane" , An event which took place at DPS Bangalore South '
 categories: "Gaming Event "
 author: dheeraj
