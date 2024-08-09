@@ -1,10 +1,10 @@
 ---
 layout: post
 image: /_media/uploads/img-1-.png
-title: "THE EVOLUTION OF GAMING: A JOURNEY THROUGH  TIME AND TECHNOLOGY."
-categories: Evoution of gaming
+title: "THE EVOLUTION OF GAMING: A JOURNEY THROUGH  TIME AND TECHNOLOGY"
+categories: gaming
 author: "ayush "
-date: 2024-08-09T08:22:00.000Z
+date: 2024-08-08T13:52:00.000Z
 ---
 Gaming has come a long way since its humble beginnings in
 
