@@ -1,10 +1,10 @@
 ---
 layout: post
 image: /_media/uploads/dips-bytes.png
-title: DIPS BYTES
-categories: "DPS BLOG "
+title: Introducing DiPS Bytes!
+categories: "dps blog "
 author: dheeraj
-date: 2024-08-09T07:48:00.000Z
+date: 2024-08-08T13:18:00.000Z
 ---
 Introducing DIPS BYTES: Your New School Blog
 
