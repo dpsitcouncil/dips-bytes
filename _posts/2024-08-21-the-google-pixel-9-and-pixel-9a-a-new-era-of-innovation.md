@@ -1,7 +1,7 @@
 ---
 layout: post
 image: /_media/uploads/pixel-9.jpg
-title: The Google PIxel 9 and Pixel 9a:A New Era Of Innovation
+title: "The Google PIxel 9 and Pixel 9a: A New Era Of Innovation"
 categories: Technology
 author: Behlah
 date: 2024-08-21T19:30:00.000Z
