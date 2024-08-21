@@ -1,10 +1,10 @@
 ---
 layout: post
 image: /_media/uploads/pixel-9.jpg
-title: "The Google PIxel 9 and Pixel 9a: A New Era Of Innovation"
+title: "The Google Pixel 9 and Pixel 9a: A New Era Of Innovation"
 categories: Technology
 author: Behlah
-date: 2024-08-21T19:30:00.000Z
+date: 2024-08-20T01:00:00.000Z
 ---
 Google has unveiled its latest flagship smartphones, the Pixel 9 and Pixel 9a, and they promise to elevate the smartphone experience with advanced features, cutting-edge technology, and exceptional value. Here’s an in-depth look at what you can expect from these exciting new additions to the Pixel lineup.
 
